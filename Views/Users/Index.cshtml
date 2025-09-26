@@ -1,0 +1,27 @@
+@model IEnumerable<aspnet_crud_sample.Models.User>
+
+<h2>Users</h2>
+<a class="btn btn-primary" asp-action="Create">Add User</a>
+<table class="table mt-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model) {
+        <tr>
+            <td>@user.Name</td>
+            <td>@user.Email</td>
+            <td>@user.Age</td>
+            <td>
+                <a class="btn btn-sm btn-warning" asp-action="Edit" asp-route-id="@user.Id">Edit</a>
+                <a class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@user.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
