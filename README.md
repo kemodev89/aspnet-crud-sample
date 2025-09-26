@@ -32,7 +32,14 @@ Demonstrates how to connect to SQL Server and perform Create, Read, Update, and 
 - `Controllers/UsersController.cs` – CRUD logic  
 - `Views/Users/` – Razor pages for CRUD  
 - `appsettings.json` – SQL Server connection config  
-- `Program.cs` – Entry point  
+- `Program.cs` – Entry point
+
+---
+
+## 📸 Screenshots
+![User List](screenshots/index.png)  
+![Create User](screenshots/create.png)  
+![Delete Confirmation](screenshots/delete.png)
 
 ---
 
